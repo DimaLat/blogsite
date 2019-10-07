@@ -1,7 +1,11 @@
 {% extends 'posts/base.html' %}
 
 {% block content %}
-	<h1>My Blog <button class="btn btn-default"><a href="/posts/create/">Create</a></h1></button>
+<div class="jumbotron">
+	<h1>My Blog</h1>
+</div>
+	<a href="/posts/create/" class="btn btn-info btn-lg active" role="button">Create</a>
+	<a href="https://github.com/DimaLat" class="btn btn-info btn-lg active" role="button">Github</a>
 	<hr>
 	{% for post in posts %}
 	<div class="row">
