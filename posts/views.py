@@ -15,7 +15,7 @@ def posts_list(request):
     context = {
         'posts': posts # ключ значение для этого словаря, для всех постов
     }
-    messages.info(request,'Here are all the current blog posts.')
+    messages.info(request,'')
     return render(request, "posts/posts_list.html", context)
 
 
